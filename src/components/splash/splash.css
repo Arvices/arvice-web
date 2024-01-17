@@ -1,0 +1,52 @@
+#splashpage  {
+    display: flex;
+    margin-top: 180px;
+    height: 100vh;
+}
+.splash-images {
+    margin: 0px auto 20px auto;
+}
+.splash-text-main {
+    margin: 0px 0px 30px auto;
+}
+
+.splash-image-1, .splash-image-3 {
+    margin-top: 20px !important;
+    width: 70px !important;
+}
+.splash-image-2 {
+    width: 110px !important;
+}
+splash-image-1 {
+    border: 1px solid;
+}
+
+button.sb-1, button.sb-2{
+    margin-top: 50px;
+}
+
+button.sb-1 {
+    padding: 10px 40px;
+    border-radius : 20px;
+    background-color: #2CC26A;
+    font-weight: bold;
+    border: 0px solid;
+    color : white;
+    width: max-content;
+    margin: 20px auto;
+    display: block;
+}
+
+button.sb-2 {
+    background-color: white;
+    border : 0px solid;
+    width: max-content;
+    margin: 0px auto;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+
+
