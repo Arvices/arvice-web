@@ -3,16 +3,23 @@
     margin: 100px 0px 0px 0px;
 }
 .ps-text > h1 {
-    width: 80%
+    width: 90%
 }
 .ps-text > p {
     margin-top: 10px;
 }
 .ps-inputs {
-    margin: 50px auto 0px auto;
+    margin: 25px auto 0px auto;
+}
+.ps-inputs > div {
+    padding-bottom : 15px;
 }
 .continue-button {
-    margin: 150px auto 0px auto
+    margin: 50px auto 0px auto
+}
+.ps-input-label {
+    padding-bottom: 5px;
+    display: block;
 }
 .ps-input {
     width: 100%;

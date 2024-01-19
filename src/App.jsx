@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Splash from './components/splash/splash.jsx';
 import Login from './components/login/login.jsx';
 import SignUp from './components/signup/signup.jsx';
-import PhoneSignup from './components/PhoneSignup/PhoneSignup.jsx';
+import ManualSignup from './components/ManualSignUp/ManualSignup.jsx';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Route path='/' element={<Splash />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
-          <Route path='/phone-signup' element={<PhoneSignup />} />
+          <Route path='/manual-signup' element={<ManualSignup />} />
         </Routes>
       </Router>
     </>

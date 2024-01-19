@@ -2,6 +2,7 @@ const copyDir = require("copy-dir");
 const rename = require("rename-overwrite");
 const path = require("node:path");
 const fs = require("node:fs");
+
 function replace(pathToFile, options) {
   let file = fs.readFileSync(pathToFile).toString();
   console.log("file splitted", file.split("\n")[0]);
@@ -18,24 +19,10 @@ copyDir(from, to, {}, async (err) => {
   if (err) {
     console.error(err.message);
   } else {
-    let vueFile = path.join(to, `Ref.vue`);
-    let testFile = path.join(to, `ref.test.js`);
-    let newTestFile = path.join(to, `${componentName}.test.js`);
+    let jsxFile = path.join(to, `ref.jsx`);
     let cssFile = path.join(to, `ref.css`);
     let newCssFile = path.join(to, `${componentName}.css`);
-    let vueStyleComponentName =
-      componentName[0].toUpperCase() +
-      componentName.slice(1, componentName.length);
-    let newVueFile = path.join(to, `${vueStyleComponentName}.vue`);
-
-    rename(testFile, newTestFile)
-      .then(() => {
-        replace(newTestFile, { from: "Ref", to: vueStyleComponentName });
-        console.log("successfully renamed test file and replaced string");
-      })
-      .catch((err) => {
-        console.error(err.message);
-      });
+    let newJsxFile = path.join(to, `${componentName}.jsx`);
 
     rename(cssFile, newCssFile)
       .then(() => {
@@ -45,11 +32,11 @@ copyDir(from, to, {}, async (err) => {
         console.error(err.message);
       });
 
-    rename(vueFile, newVueFile)
+    rename(jsxFile, newJsxFile)
       .then(() => {
-        replace(newVueFile, { from: "ref", to: componentName });
-        replace(newVueFile, { from: "Ref", to: vueStyleComponentName });
-        console.log("successfully renamed .vue file");
+        replace( newJsxFile, { from: "ref", to: componentName });
+        replace( newJsxFile, { from: "ref", to:  newJsxFile });
+        console.log("successfully renamed .jsx file");
       })
       .catch((err) => {
         console.error(err.message);
