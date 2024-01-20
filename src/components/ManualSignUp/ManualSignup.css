@@ -30,3 +30,6 @@
 .ps-input-container {
     margin: 20px auto 0px auto;
 }
+.ls-warning {
+    color : rgb(255, 119, 119);
+}

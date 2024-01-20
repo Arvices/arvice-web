@@ -1,6 +1,6 @@
 import "./signup.css"
 import LoginButton from "../login-button/LoginButton"
-import phone from "../../assets/images/phone.png"
+import envelope from "../../assets/images/envelope.png"
 import google from "../../assets/images/Google.png"
 import apple from "../../assets/images/Apple.png"
 import facebook from "../../assets/images/Facebook.png"
@@ -21,7 +21,7 @@ function SignUp () {
                         <p className="login-text-follow text-body-regular">Continue with one of the following options</p>
                     </div>
                     <div className="login-buttons">
-                        <LoginButton handleClick={onPhoneSignup} icon={phone} buttonText={'Phone Number Or Email'} />
+                        <LoginButton handleClick={onPhoneSignup} icon={envelope} buttonText={'Email Address'} />
                         <LoginButton icon={google} buttonText={'Google'} />
                         <LoginButton icon={facebook} buttonText={'Facebook'} />
                         <LoginButton icon={apple} buttonText={'Apple'} />
