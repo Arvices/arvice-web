@@ -49,7 +49,7 @@ function ManualSignup () {
         setLoading(true);
         console.log("handled continue");
         let data = {
-            type: "manual",
+            auth_type: "manual",
             email,
             password,
             info: "this signup requires a password and email since it is manual, email has been validated on the frontend. password was checked to ensure that it is above 8 characters."
