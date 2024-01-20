@@ -5,10 +5,7 @@ import { Input } from "antd";
 import { UserOutlined } from '@ant-design/icons';
 import { reqSubmitSignup } from "../../utils/requests";
 
-import { notification  } from "antd";
-
 function ManualSignup () {
-    const [api, contextHolder] = notification.useNotification();
     let [email, setEmail] = useState("")
     let [password, setPassword] = useState("")
     let [emailValid,setEmailValid] = useState(true)
