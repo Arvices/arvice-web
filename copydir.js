@@ -34,8 +34,8 @@ copyDir(from, to, {}, async (err) => {
 
     rename(jsxFile, newJsxFile)
       .then(() => {
-        replace( newJsxFile, { from: "ref", to: componentName });
-        replace( newJsxFile, { from: "ref", to:  newJsxFile });
+        replace(newJsxFile, { from: "ref", to: componentName });
+        replace(newJsxFile, { from: "ref", to: newJsxFile });
         console.log("successfully renamed .jsx file");
       })
       .catch((err) => {

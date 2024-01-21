@@ -1,17 +1,18 @@
-#loginsection  {
-    display: flex;
-    margin-top: 150px;
-    height: 100vh;
+#loginsection {
+  display: flex;
+  margin-top: 150px;
+  height: 100vh;
 }
-.login-text-main, .login-bottom-text {
-width: 70%;
-margin: 0px auto 0px auto;
-text-align: center;
+.login-text-main,
+.login-bottom-text {
+  width: 70%;
+  margin: 0px auto 0px auto;
+  text-align: center;
 }
-.login-head, .login-text-follow {
-    margin-bottom : 10px;
+.login-head,
+.login-text-follow {
+  margin-bottom: 10px;
 }
 .login-buttons {
-    margin: 60px auto;
+  margin: 60px auto;
 }
-

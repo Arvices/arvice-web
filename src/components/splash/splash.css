@@ -1,75 +1,74 @@
-#splashpage  {
-    display: flex;
-    height: 100vh;
-    align-items: center;
+#splashpage {
+  display: flex;
+  height: 100vh;
+  align-items: center;
 }
 .splash-images {
-    margin: 0px auto 20px auto;
+  margin: 0px auto 20px auto;
 }
 .splash-text-main {
-    margin: 0px 0px 30px auto;
+  margin: 0px 0px 30px auto;
 }
 .stm-main {
-    width: 70%;
+  width: 70%;
 }
 
-.splash-image-1, .splash-image-3 {
-    margin-top: 20px !important;
-    width: 70px !important;
+.splash-image-1,
+.splash-image-3 {
+  margin-top: 20px !important;
+  width: 70px !important;
 }
 .splash-image-2 {
-    width: 110px !important;
+  width: 110px !important;
 }
 splash-image-1 {
-    border: 1px solid;
+  border: 1px solid;
 }
 
 .splash-buttons {
-    width: 80%;
+  width: 80%;
 }
-.button-1-container, .button-2-container {
-    padding-bottom : 20px;
+.button-1-container,
+.button-2-container {
+  padding-bottom: 20px;
 }
 
-button.sb-1, button.sb-2{
-    margin-top: 50px;
+button.sb-1,
+button.sb-2 {
+  margin-top: 50px;
 }
 .color-bg-primary {
-    background-color: #2CC26A;
+  background-color: #2cc26a;
 }
 .color-fg-primary {
-    color : white;
+  color: white;
 }
 .color-fg-primary:hover {
-    color : rgb(187, 255, 223) !important;
-    border-color: rgb(187, 255, 223) !important;
+  color: rgb(187, 255, 223) !important;
+  border-color: rgb(187, 255, 223) !important;
 }
-.color-shadow-primary,.color-shadow-primary-hover:hover {
-    box-shadow: 0px 0px 10px #6cf7a5;
+.color-shadow-primary,
+.color-shadow-primary-hover:hover {
+  box-shadow: 0px 0px 10px #6cf7a5;
 }
 
 button.sb-11 {
-    padding: 10px 40px;
-    border-radius : 20px;
-    background-color: #2CC26A;
-    font-weight: bold;
-    border: 0px solid;
-    color : white;
-    width: max-content;
-    margin: 20px auto;
-    display: block;
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: #2cc26a;
+  font-weight: bold;
+  border: 0px solid;
+  color: white;
+  width: max-content;
+  margin: 20px auto;
+  display: block;
 }
 
 button.sb-2 {
-    background-color: white;
-    border : 0px solid;
-    width: max-content;
-    margin: 0px auto;
-    font-weight: bold;
-    display: block;
+  background-color: white;
+  border: 0px solid;
+  width: max-content;
+  margin: 0px auto;
+  font-weight: bold;
+  display: block;
 }
-
-
-
-
-

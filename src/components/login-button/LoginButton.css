@@ -1,22 +1,23 @@
- .loginButton , .buttonMain{
-    width: 80%;
-    border-radius: 50px;
-    border: 2px solid rgb(191, 255, 220);
-    display: flex;
-    margin: 10px auto 10px auto;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+.loginButton,
+.buttonMain {
+  width: 80%;
+  border-radius: 50px;
+  border: 2px solid rgb(191, 255, 220);
+  display: flex;
+  margin: 10px auto 10px auto;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
-.buttonMain{
-    width: 100%;
-    background-color: #2CC26A;
-    color : white;
-    font-weight: 600;
+.buttonMain {
+  width: 100%;
+  background-color: #2cc26a;
+  color: white;
+  font-weight: 600;
 }
 
 .loginButton > img {
-    width : 24px;
-    margin-right : 7px;
+  width: 24px;
+  margin-right: 7px;
 }
