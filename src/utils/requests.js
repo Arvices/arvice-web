@@ -7,5 +7,8 @@ function reqSubmitSignup(data) {
     headers: {},
   });
 }
+function reqSubmitOTP(data) {
+  return axios.post(`${baseURL}/user/verifyemail`, data);
+}
 
-export { reqSubmitSignup };
+export { reqSubmitSignup, reqSubmitOTP };

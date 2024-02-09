@@ -4,8 +4,15 @@ import { Button } from "antd";
 import { Input } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import { reqSubmitSignup } from "../../utils/requests";
+import {useSelector, useDispatch} from "react-redux"
+import { updateEmail } from "../../storeUtils/userSlice";
+import { useNavigate } from "react-router-dom";
 
 function ManualSignup() {
+  let navigate = useNavigate();
+  let user = useSelector((state)=> state.user)
+  let dispatch = useDispatch();
+
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   let [emailValid, setEmailValid] = useState(true);
@@ -53,21 +60,20 @@ function ManualSignup() {
     }
     // begin-loading
     setLoading(true);
-    console.log("handled continue");
     let data = {
       email,
       password
     };
     reqSubmitSignup(data)
       .then((res) => {
+        console.log("res", res)
         setLoading(false);
-
-        console.log("response data", res.data);
+        dispatch(updateEmail(email))
+        navigate("/verify-email")
       })
       .catch((err) => {
+        console.error(err.message)
         setLoading(false);
-
-        console.error("An Error Occured", err.message);
       });
   }
 
@@ -83,8 +89,7 @@ function ManualSignup() {
         <div className="ps-inputs">
           <div className="phone-email-input-container">
             <label className="ps-input-label text-small-regular">
-              {" "}
-              Email (required){" "}
+              Email (required)
             </label>
             <Input
               status={emailValid ? "" : "error"}

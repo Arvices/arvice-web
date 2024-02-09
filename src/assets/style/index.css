@@ -17,9 +17,17 @@ img {
   margin: 0px auto;
 }
 
+.width-fit {
+  width: max-content;
+}
+
 .center {
   display: block;
   margin: 0px auto;
+}
+
+.offset-top-main {
+  padding-top: 100px;
 }
 
 button:hover {

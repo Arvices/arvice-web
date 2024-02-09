@@ -1,0 +1,7 @@
+#verify-email input {
+    border: 2px solid rgb(214, 253, 224) !important;
+    border-radius: 10px !important;
+    width: 45px !important;
+    height: 45px !important;
+    margin-right: 5px !important;
+}
