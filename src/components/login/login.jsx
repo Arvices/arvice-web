@@ -5,11 +5,18 @@ import google from "../../assets/images/Google.png";
 import apple from "../../assets/images/Apple.png";
 import facebook from "../../assets/images/Facebook.png";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 function Login() {
   let navigate = useNavigate();
   const goToManualLogin = () => {
-    navigate("/manual-login");
-  };
+    navigate("/manual-login")
+  }
+
+  function getGoogle(){
+    console.log("get google")
+    return axios.get("http://localhost:3000/google")
+  }
   return (
     <section>
       <div id="loginsection" className="page-main full-device-height">
@@ -26,7 +33,7 @@ function Login() {
               icon={envelope}
               buttonText={"Email Address"}
             />
-            <LoginButton icon={google} buttonText={"Google"} />
+            <LoginButton icon={google} handleClick={getGoogle} buttonText={"Google"} />
             <LoginButton icon={facebook} buttonText={"Facebook"} />
             <LoginButton icon={apple} buttonText={"Apple"} />
           </div>

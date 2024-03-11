@@ -7,11 +7,11 @@ import { reqSubmitSignup } from "../../utils/requests";
 import { useSelector, useDispatch } from "react-redux";
 import { updateEmail } from "../../storeUtils/userSlice";
 import { useNavigate } from "react-router-dom";
-
 function ManualSignup() {
   let navigate = useNavigate();
   let user = useSelector((state) => state.user);
   let dispatch = useDispatch();
+
 
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");

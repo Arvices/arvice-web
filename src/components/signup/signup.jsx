@@ -4,7 +4,7 @@ import envelope from "../../assets/images/envelope.png";
 import google from "../../assets/images/Google.png";
 import apple from "../../assets/images/Apple.png";
 import facebook from "../../assets/images/Facebook.png";
-
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function SignUp() {
@@ -12,6 +12,10 @@ function SignUp() {
   const onPhoneSignup = () => {
     navigate("/manual-signup");
   };
+  function getGoogle(){
+    console.log("get google")
+    return axios.get("http://localhost:3000/google")
+   }
   return (
     <section>
       <div id="loginsection" className="page-main full-device-height">
@@ -28,7 +32,7 @@ function SignUp() {
               icon={envelope}
               buttonText={"Email Address"}
             />
-            <LoginButton icon={google} buttonText={"Google"} />
+            <LoginButton icon={google} handleClick={getGoogle} buttonText={"Google"} />
             <LoginButton icon={facebook} buttonText={"Facebook"} />
             <LoginButton icon={apple} buttonText={"Apple"} />
           </div>
