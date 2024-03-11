@@ -1,4 +1,4 @@
-import "./ref.css"
+import "./ref.css";
 function ref() {
   return (
     <div>

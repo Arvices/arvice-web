@@ -4,6 +4,10 @@
   box-sizing: border-box;
   width: 100%;
 }
+body {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(190, 240, 255);
+}
 
 img {
   width: 100%;
@@ -30,6 +34,14 @@ img {
   padding-top: 100px;
 }
 
+.offset-top-main-2 {
+  padding-top: 200px;
+}
+
+.offset-top-main-3 {
+  padding-top: 300px;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -41,4 +53,15 @@ button:hover {
 .ant-input-prefix,
 .ant-input-suffix {
   width: max-content !important;
+}
+
+.full-device-height {
+  height: 100vh;
+}
+.page-main {
+  display: flex;
+  align-items: center;
+}
+.pointer {
+  cursor: pointer;
 }

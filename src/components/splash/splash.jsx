@@ -16,7 +16,7 @@ function Splash() {
   }
 
   return (
-    <section id="splashpage">
+    <section id="splashpage" className="page-main full-device-height">
       <div className="splash-container">
         <div className="splash-images container-fluid">
           <div className="row justify-content-center align-items-center center-only">

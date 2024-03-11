@@ -1,4 +1,4 @@
-import "./AccountTypeSelect.css"
+import "./AccountTypeSelect.css";
 
 function AccountTypeSelect() {
   return (

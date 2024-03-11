@@ -7,12 +7,12 @@ import facebook from "../../assets/images/Facebook.png";
 import { useNavigate } from "react-router-dom";
 function Login() {
   let navigate = useNavigate();
-  const onPhoneSignup = () => {
-    navigate("/manual-signup");
+  const goToManualLogin = () => {
+    navigate("/manual-login");
   };
   return (
     <section>
-      <div id="loginsection">
+      <div id="loginsection" className="page-main full-device-height">
         <div>
           <div className="login-text-main">
             <h1 className="login-head text-h3-bold">Login</h1>
@@ -22,7 +22,7 @@ function Login() {
           </div>
           <div className="login-buttons">
             <LoginButton
-              handleClick={onPhoneSignup}
+              handleClick={goToManualLogin}
               icon={envelope}
               buttonText={"Email Address"}
             />

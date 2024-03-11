@@ -4,14 +4,14 @@ import { Button } from "antd";
 import { Input } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import { reqSubmitSignup } from "../../utils/requests";
-import {useSelector, useDispatch} from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
 import { updateEmail } from "../../storeUtils/userSlice";
 import { useNavigate } from "react-router-dom";
 
 function ManualSignup() {
   let navigate = useNavigate();
-  let user = useSelector((state)=> state.user)
-  let dispatch = useDispatch()
+  let user = useSelector((state) => state.user);
+  let dispatch = useDispatch();
 
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
@@ -23,7 +23,7 @@ function ManualSignup() {
   );
   let passwordValidationError = (
     <span className="ls-warning text-small-regular">
-      Password should contain 8 or more character
+      Password should contain 8 or more characters
     </span>
   );
 
@@ -62,23 +62,23 @@ function ManualSignup() {
     setLoading(true);
     let data = {
       email,
-      password
+      password,
     };
     reqSubmitSignup(data)
       .then((res) => {
-        console.log("res", res)
+        console.log("res", res);
         setLoading(false);
-        dispatch(updateEmail(email))
-        navigate("/verify-email")
+        dispatch(updateEmail(email));
+        navigate("/verify-email");
       })
       .catch((err) => {
-        console.error(err.message)
+        console.error(err.message);
         setLoading(false);
       });
   }
 
   return (
-    <section id="phone-signup-page">
+    <section id="phone-signup-page" className="page-main full-device-height">
       <div className="phone-signup-container mobile-padding">
         <div className="ps-text">
           <h1>Please Input a valid Email Address</h1>

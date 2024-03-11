@@ -1,0 +1,14 @@
+.radio-item > span {
+  width: max-content !important;
+}
+.radio-item {
+  width: max-content;
+}
+.check-ref > label > span {
+  width: max-content !important;
+}
+
+.check-ref > label {
+  width: max-content;
+  padding: 5px 15px;
+}

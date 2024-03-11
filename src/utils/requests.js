@@ -7,8 +7,13 @@ function reqSubmitSignup(data) {
     headers: {},
   });
 }
+
+function reqSubmitLogin(data) {
+  return axios.post(`${baseURL}/user/login`,data)
+}
+
 function reqSubmitOTP(data) {
   return axios.post(`${baseURL}/user/verifyemail`, data);
 }
 
-export { reqSubmitSignup, reqSubmitOTP };
+export { reqSubmitSignup, reqSubmitOTP, reqSubmitLogin };

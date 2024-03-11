@@ -14,7 +14,7 @@ function SignUp() {
   };
   return (
     <section>
-      <div id="loginsection">
+      <div id="loginsection" className="page-main full-device-height">
         <div>
           <div className="login-text-main">
             <h1 className="login-head text-h3-bold">Sign Up</h1>
